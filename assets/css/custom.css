@@ -1,0 +1,17 @@
+/* Custom image grid */
+.grid-portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2em;
+}
+
+.grid-portfolio .item img {
+	width: 100%;
+	display: block;
+}
+
+@media screen and (max-width: 736px) {
+	.grid-portfolio {
+		grid-template-columns: 1fr;
+	}
+}
