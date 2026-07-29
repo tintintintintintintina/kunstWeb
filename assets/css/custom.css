@@ -1,13 +1,25 @@
-/* Custom image grid */
 .grid-portfolio {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2em;
 }
 
-.grid-portfolio .item img {
+.grid-portfolio .item {
+	aspect-ratio: 1 / 1;      /* square cells — change to 4/3, 16/9, etc. as you like */
+	overflow: visible;
+	position: relative;
+}
+
+.grid-portfolio .item .image.fit {
+	height: 100%;
 	width: 100%;
-	display: block;
+}
+
+.grid-portfolio .item .image.fit img {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;       /* fills the box, cropping overflow */
+	object-position: center;
 }
 
 @media screen and (max-width: 736px) {
