@@ -2666,3 +2666,12 @@ input, select, textarea {
 #portfolio .item {
     overflow: visible;
 }
+
+/* Portfolio: Rahmen/Hintergrund entfernen */
+.grid-portfolio .item,
+.grid-portfolio .item header,
+.grid-portfolio .image {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+}
