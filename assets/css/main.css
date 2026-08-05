@@ -2630,3 +2630,26 @@ input, select, textarea {
 				}
 
 	}
+/* Portfolio */
+#portfolio .item .image img {
+    display: block;
+    width: 100%;
+    height: auto;      /* verhindert Verzerrung */
+}
+
+/* Abstand zwischen den Bildern */
+#portfolio .item {
+    margin-bottom: 2em;
+}
+
+/* Mobile Ansicht */
+@media screen and (max-width: 736px) {
+    #portfolio .row {
+        display: block;
+    }
+
+    #portfolio .item {
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+}
