@@ -2653,3 +2653,16 @@ input, select, textarea {
         margin: 0 0 2em 0;
     }
 }
+#portfolio .image.fit {
+    height: auto;
+}
+
+#portfolio .image.fit img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+#portfolio .item {
+    overflow: visible;
+}
