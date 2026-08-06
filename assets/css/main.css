@@ -2675,3 +2675,13 @@ input, select, textarea {
     box-shadow: none;
     border: 0;
 }
+.gallery {
+  columns: 3;
+  column-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
