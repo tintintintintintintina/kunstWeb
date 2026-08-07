@@ -2640,15 +2640,3 @@ input, select, textarea {
 	height: auto;
 	display: block;
 }
-#portfolio .item img {
-	width: auto !important;
-	max-width: 100% !important;
-	height: auto !important;
-	display: block;
-	margin: 0 auto;
-}
-
-#portfolio .item .image {
-	text-align: center;
-}
-	
