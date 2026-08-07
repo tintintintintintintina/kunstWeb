@@ -2714,3 +2714,27 @@ input, select, textarea {
     width: 100%;
     height: auto;
 }
+#portfolio .row.grid-portfolio {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#portfolio .row.grid-portfolio > .item {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#portfolio .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 960px) {
+    #portfolio .row.grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+}
