@@ -2634,29 +2634,4 @@ input, select, textarea {
 	box-shadow: none;
 	background: transparent;
 }
-		#portfolio .item .image {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#portfolio .item .image img {
-	width: auto;
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-#portfolio .image.fit {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-#portfolio .image.fit img {
-	width: auto;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
+		
