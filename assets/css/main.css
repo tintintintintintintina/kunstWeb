@@ -2644,18 +2644,20 @@ input, select, textarea {
 	margin-bottom: 2em;
 }
 
-/* Bildcontainer */
 #portfolio .image.fit {
-	display: block;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	overflow: hidden;
 }
 
-/* Bilder behalten ihr eigenes Format */
 #portfolio .image.fit img {
-	width: auto;
 	max-width: 100%;
+	max-height: 300px;
+	width: auto;
 	height: auto;
-	display: inline-block;
+	display: block;
 }
 
 /* Keine Rahmen / Hintergründe */
