@@ -2675,29 +2675,7 @@ input, select, textarea {
     box-shadow: none;
     border: 0;
 }
-.gallery {
-  columns: 3;
-  column-gap: 20px;
-}
 
-.gallery img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.gallery {
-    columns: 3;
-    column-gap: 20px;
-}
-
-.gallery img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-}
 .grid-portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -2713,28 +2691,4 @@ input, select, textarea {
     display: block;
     width: 100%;
     height: auto;
-}
-#portfolio .row.grid-portfolio {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-#portfolio .row.grid-portfolio > .item {
-    width: auto;
-    padding: 0;
-    margin: 0;
-}
-
-#portfolio .item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media screen and (max-width: 960px) {
-    #portfolio .row.grid-portfolio {
-        grid-template-columns: 1fr;
-    }
 }
