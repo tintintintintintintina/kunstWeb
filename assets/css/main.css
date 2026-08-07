@@ -2628,26 +2628,3 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-
-	}
-#portfolio .grid-portfolio {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 40px;
-}
-
-#portfolio .grid-portfolio .item {
-	width: auto;
-}
-
-#portfolio .grid-portfolio img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-@media screen and (max-width: 960px) {
-	#portfolio .grid-portfolio {
-		grid-template-columns: 1fr;
-	}
-}
