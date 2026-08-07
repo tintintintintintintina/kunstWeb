@@ -2630,65 +2630,24 @@ input, select, textarea {
 				}
 
 	}
-/* Portfolio */
-#portfolio .item .image img {
-    display: block;
-    width: 100%;
-    height: auto;      /* verhindert Verzerrung */
+#portfolio .grid-portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
 }
 
-/* Abstand zwischen den Bildern */
-#portfolio .item {
-    margin-bottom: 2em;
+#portfolio .grid-portfolio .item {
+	width: auto;
 }
 
-/* Mobile Ansicht */
-@media screen and (max-width: 736px) {
-    #portfolio .row {
-        display: block;
-    }
-
-    #portfolio .item {
-        width: 100%;
-        margin: 0 0 2em 0;
-    }
-}
-#portfolio .image.fit {
-    height: auto;
+#portfolio .grid-portfolio img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
-#portfolio .image.fit img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-}
-
-#portfolio .item {
-    overflow: visible;
-}
-
-/* Portfolio: Rahmen/Hintergrund entfernen */
-.grid-portfolio .item,
-.grid-portfolio .item header,
-.grid-portfolio .image {
-    background: transparent;
-    box-shadow: none;
-    border: 0;
-}
-
-.grid-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.grid-portfolio .item {
-    flex: 1 1 300px;
-    margin-bottom: 20px;
-}
-
-.grid-portfolio img {
-    display: block;
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 960px) {
+	#portfolio .grid-portfolio {
+		grid-template-columns: 1fr;
+	}
 }
