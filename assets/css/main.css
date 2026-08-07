@@ -2630,69 +2630,65 @@ input, select, textarea {
 				}
 
 		}
+/* Portfolio */
 
-
-/* Portfolio /
 #portfolio .item .image img {
-display: block;
-width: 100%;
-height: auto; / verhindert Verzerrung */
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
 }
 
 /* Abstand zwischen den Bildern */
 #portfolio .item {
-margin-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+/* Bildcontainer */
+#portfolio .image.fit {
+	display: block;
+	text-align: center;
+}
+
+/* Bilder behalten ihr eigenes Format */
+#portfolio .image.fit img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+/* Keine Rahmen / Hintergründe */
+.grid-portfolio .item,
+.grid-portfolio .item header,
+.grid-portfolio .image {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+}
+
+/* Portfolio Grid */
+.grid-portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.grid-portfolio .item {
+	width: auto;
+	margin-bottom: 0;
 }
 
 /* Mobile Ansicht */
 @media screen and (max-width: 736px) {
-#portfolio .row {
-display: block;
-}
 
-#portfolio .item {
-    width: 100%;
-    margin: 0 0 2em 0;
-}
+	.grid-portfolio {
+		grid-template-columns: 1fr;
+	}
 
+	#portfolio .item {
+		width: 100%;
+		margin-bottom: 2em;
+	}
 
-}
-#portfolio .image.fit {
-height: auto;
-}
-
-#portfolio .image.fit img {
-height: auto;
-width: 100%;
-object-fit: contain;
-}
-
-#portfolio .item {
-overflow: visible;
-}
-
-/* Portfolio: Rahmen/Hintergrund entfernen */
-.grid-portfolio .item,
-.grid-portfolio .item header,
-.grid-portfolio .image {
-background: transparent;
-box-shadow: none;
-border: 0;
-}
-
-.grid-portfolio {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-}
-
-.grid-portfolio .item {
-flex: 1 1 300px;
-margin-bottom: 20px;
-}
-
-.grid-portfolio img {
-display: block;
-width: 100%;
-height: auto;
 }
