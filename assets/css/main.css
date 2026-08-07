@@ -2629,68 +2629,77 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
-		}
-/* Portfolio */
-
-#portfolio .item .image img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
+		```
 }
 
-/* Abstand zwischen den Bildern */
+```
+
+ 
+
+/\* Portfolio */*
+ *#portfolio .item .image img {*
+ *display: block;*
+ *width: 100%;*
+ *height: auto;      /* verhindert Verzerrung \*/
+ }
+
+/\* Abstand zwischen den Bildern \*/
+ \#portfolio .item {
+ margin-bottom: 2em;
+ }
+
+/\* Mobile Ansicht \*/
+ @media screen and (max-width: 736px) {
+ \#portfolio .row {
+ display: block;
+ }
+
+```
 #portfolio .item {
-	margin-bottom: 2em;
+    width: 100%;
+    margin: 0 0 2em 0;
 }
 
-#portfolio .image.fit {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 350px;
-	overflow: hidden;
-}
+```
 
-#portfolio .image.fit img {
-	max-width: 100%;
-	max-height: 350px;
-	width: auto;
-	height: auto;
-	display: block;
 }
+ \#portfolio .image.fit {
+ height: auto;
+ }
 
-/* Keine Rahmen / Hintergründe */
-.grid-portfolio .item,
-.grid-portfolio .item header,
-.grid-portfolio .image {
-	background: transparent;
-	box-shadow: none;
-	border: 0;
-}
+\#portfolio .image.fit img {
+ height: auto;
+ width: 100%;
+ object-fit: contain;
+ }
 
-/* Portfolio Grid */
+\#portfolio .item {
+ overflow: visible;
+ }
+
+/\* Portfolio: Rahmen/Hintergrund entfernen \*/
+ .grid-portfolio .item,
+ .grid-portfolio .item header,
+ .grid-portfolio .image {
+ background: transparent;
+ box-shadow: none;
+ border: 0;
+ }
+
 .grid-portfolio {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-}
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ }
 
 .grid-portfolio .item {
-	width: auto;
-	margin-bottom: 0;
-}
+ flex: 1 1 300px;
+ margin-bottom: 20px;
+ }
 
-/* Mobile Ansicht */
-@media screen and (max-width: 736px) {
-
-	.grid-portfolio {
-		grid-template-columns: 1fr;
-	}
-
-	#portfolio .item {
-		width: 100%;
-		margin-bottom: 2em;
-	}
-
+.grid-portfolio img {
+ display: block;
+ width: 100%;
+ height: auto;
+ }
 }
