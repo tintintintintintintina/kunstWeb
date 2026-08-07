@@ -2629,9 +2629,70 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
-		#portfolio .item {
-	border: none;
-	box-shadow: none;
-	background: transparent;
+		}
+
+
+/* Portfolio /
+#portfolio .item .image img {
+display: block;
+width: 100%;
+height: auto; / verhindert Verzerrung */
 }
-		
+
+/* Abstand zwischen den Bildern */
+#portfolio .item {
+margin-bottom: 2em;
+}
+
+/* Mobile Ansicht */
+@media screen and (max-width: 736px) {
+#portfolio .row {
+display: block;
+}
+
+#portfolio .item {
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+
+}
+#portfolio .image.fit {
+height: auto;
+}
+
+#portfolio .image.fit img {
+height: auto;
+width: 100%;
+object-fit: contain;
+}
+
+#portfolio .item {
+overflow: visible;
+}
+
+/* Portfolio: Rahmen/Hintergrund entfernen */
+.grid-portfolio .item,
+.grid-portfolio .item header,
+.grid-portfolio .image {
+background: transparent;
+box-shadow: none;
+border: 0;
+}
+
+.grid-portfolio {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.grid-portfolio .item {
+flex: 1 1 300px;
+margin-bottom: 20px;
+}
+
+.grid-portfolio img {
+display: block;
+width: 100%;
+height: auto;
+}
