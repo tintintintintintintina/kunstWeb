@@ -2684,4 +2684,17 @@ input, select, textarea {
   width: 100%;
   margin-bottom: 20px;
 }
+.gallery {
+    columns: 3;
+    column-gap: 20px;
+}
 
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}
