@@ -2648,13 +2648,13 @@ input, select, textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 350px;
 	overflow: hidden;
 }
 
 #portfolio .image.fit img {
 	max-width: 100%;
-	max-height: 300px;
+	max-height: 350px;
 	width: auto;
 	height: auto;
 	display: block;
