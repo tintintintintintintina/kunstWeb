@@ -1750,9 +1750,10 @@ input, select, textarea {
 	}
 
 		.image img {
-			display: block;
-			width: 100%;
-		}
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 		.image.avatar48 {
 			width: 48px;
