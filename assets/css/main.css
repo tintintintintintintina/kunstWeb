@@ -2669,7 +2669,7 @@ object-fit: contain;
 }
 
 #portfolio .item {
-overflow: visible;
+overflow: hidden;
 }
 
 /* Portfolio: Rahmen/Hintergrund entfernen */
@@ -2690,6 +2690,8 @@ gap: 20px;
 .grid-portfolio .item {
 flex: 1 1 300px;
 margin-bottom: 20px;
+min-width: 0;      /* NEU: verhindert Überlaufen in Chrome/Edge/Safari */
+overflow: hidden;  /* NEU: schneidet sauber ab, falls doch mal was übersteht */
 }
 
 .grid-portfolio img {
