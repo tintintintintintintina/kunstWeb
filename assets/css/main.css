@@ -2669,7 +2669,7 @@ object-fit: contain;
 }
 
 #portfolio .item {
-overflow: hidden;
+overflow: visible;
 }
 
 /* Portfolio: Rahmen/Hintergrund entfernen */
@@ -2682,20 +2682,22 @@ border: 0;
 }
 
 .grid-portfolio {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	align-items: start;
 }
 
 .grid-portfolio .item {
-flex: 1 1 300px;
-margin-bottom: 20px;
-min-width: 0;      /* NEU: verhindert Überlaufen in Chrome/Edge/Safari */
-overflow: hidden;  /* NEU: schneidet sauber ab, falls doch mal was übersteht */
+	margin-bottom: 0;
 }
 
-.grid-portfolio img {
-display: block;
-width: 100%;
-height: auto;
+.grid-portfolio .item .image.fit {
+	height: auto;
+}
+
+.grid-portfolio .item .image.fit img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
