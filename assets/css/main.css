@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
 	Prologue by HTML5 UP
@@ -2700,7 +2700,3 @@ border: 0;
 	display: block;
 	width: 100%;
 	height: auto;
-}
-body, h1, h2, h3, h4, p, a, li {
-	font-family: 'Courier Prime', monospace;
-}
